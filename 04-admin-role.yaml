@@ -1,0 +1,9 @@
+apiVersion: rbac.authorization.k8.io/v1
+kind: Role
+metadta:
+  namespace: roboshop
+  name: roboshop-admin
+rules:
+- apiGroups: ["*"]
+  resources: ["*"]
+  verbs: ["*"]
